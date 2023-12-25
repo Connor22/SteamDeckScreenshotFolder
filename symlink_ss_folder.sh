@@ -51,7 +51,6 @@ do
         if [[ $(grep -F "$GAME" "$SSFILEPATH" > /dev/null) -eq 1 ]]; then
             TITLES="$(grep -F "$GAME" "$SSFILEPATH" )" # | tr -s $'\t' | cut -f3 -d$'\t')"
             TITLE="$(echo $TITLES | grep -v "$GAME")"
-            echo $TITLE
         fi
     fi
 
